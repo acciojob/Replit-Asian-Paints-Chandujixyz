@@ -1,13 +1,35 @@
-/*  your css code here. If applicable */
-  #grid-container{
-            display: grid;
-            grid-template-columns: repeat(3, 100px);
-            grid-template-rows: repeat(3,100px);
-            width:fit-content;
-            background-color: azure;
-            border: 3px solid olive;
-            margin: 20px;
-        }
-        .grid-item{
-            border: 2px solid orange;
-        }
+ body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+}
